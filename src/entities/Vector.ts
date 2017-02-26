@@ -1,4 +1,4 @@
-export default class Vector {
+export class Vector {
   private x: number = 0;
   private y: number = 0;
 

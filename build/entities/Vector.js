@@ -36,4 +36,4 @@ class Vector {
         return new Vector(v.x * a, v.y * a);
     }
 }
-exports.default = Vector;
+exports.Vector = Vector;

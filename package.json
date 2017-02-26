@@ -6,11 +6,25 @@
   "author": "Evgeniy Khramkov <ewgeniux@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf build && tsc -p ./"
+    "build": "rm -rf build && tsc -p ./",
+    "test": "jest"
   },
   "devDependencies": {
+    "@types/jest": "^18.1.1",
     "@types/node": "^7.0.5",
+    "jest": "^19.0.2",
+    "ts-jest": "^19.0.0",
     "tslint": "^4.4.2",
     "typescript": "^2.2.1"
+  },
+  "jest": {
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/tests/.*|\\.(test|spec))\\.(ts|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
   }
 }
