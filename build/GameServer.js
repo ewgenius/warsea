@@ -20,8 +20,8 @@ class GameServer {
         }
     }
     update(delta) {
-        console.log(delta);
         this.ships.forEach(ship => {
+            ship.update(delta);
         });
     }
 }

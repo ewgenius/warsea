@@ -1,3 +1,4 @@
+import { Updatable } from './lib/Updatable';
 import { Ship } from './entities/Ship';
 
 export class GameServer {
@@ -22,9 +23,8 @@ export class GameServer {
   }
 
   update(delta: number) {
-    console.log(delta);
     this.ships.forEach(ship => {
-
+      ship.update(delta);
     });
   }
 }
